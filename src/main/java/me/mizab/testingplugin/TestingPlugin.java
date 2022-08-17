@@ -1,6 +1,8 @@
 package me.mizab.testingplugin;
 
+import me.mizab.testingplugin.commands.FlyCommand;
 import me.mizab.testingplugin.commands.MenuCommand;
+import me.mizab.testingplugin.commands.NightVisionCommand;
 import me.mizab.testingplugin.listeners.InventoryEvent;
 import me.mizab.testingplugin.listeners.PlayerEvent;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -17,5 +19,7 @@ public final class TestingPlugin extends JavaPlugin {
         getServer().getPluginManager().registerEvents(new PlayerEvent(), this);
         // commands
         getCommand("menu").setExecutor(new MenuCommand());
+        getCommand("nightvision").setExecutor(new NightVisionCommand());
+        getCommand("fly").setExecutor(new FlyCommand());
     }
 }

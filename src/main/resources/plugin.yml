@@ -5,3 +5,7 @@ api-version: 1.19
 commands:
   menu:
     description: open a inventory
+  nightvision:
+    description: give night vision
+  fly:
+    description: fly
